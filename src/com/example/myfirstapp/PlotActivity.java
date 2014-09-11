@@ -20,7 +20,7 @@ import com.jjoe64.graphview.LineGraphView;
 public class PlotActivity extends Activity {
 
 	private RelativeLayout m_layout;
-	
+	/*
 	private final Handler mHandler = new Handler();
     private Runnable mTimer1;
     private Runnable mTimer2;
@@ -34,7 +34,7 @@ public class PlotActivity extends Activity {
         double low = 0.5;
         return Math.random() * (high - low) + low;
     }
-	
+	*/
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
