@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>MyFirstApp</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.ResourceManagerBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.PreCompilerBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.ApkBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<variableList>
+		<variable>
+			<name>ActionBar_HoloDark</name>
+			<value>file:/D:/_Workspaces/Android_Design_Icons_20131106/Android%20Design%20-%20Icons%2020131120/Action%20Bar%20Icons/holo_dark</value>
+		</variable>
+		<variable>
+			<name>ActionBar_HoloLight</name>
+			<value>file:/D:/_Workspaces/Android_Design_Icons_20131106/Android%20Design%20-%20Icons%2020131120/Action%20Bar%20Icons/holo_light</value>
+		</variable>
+	</variableList>
+</projectDescription>
