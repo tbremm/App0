@@ -15,20 +15,40 @@ public class DisplayMessageActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-//		setContentView(R.layout.activity_display_message);
+		
 		// Show the Up button in the action bar.
 		setupActionBar();
 		
+		// Get the message from the main activity (user input)
 		Intent intent = getIntent();
 		String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
-		// Create a text view
-		TextView textView = new TextView(this);
-		textView.setTextSize(40);
-		textView.setText(message);
+		// Switching on strings in java is iffy performance maybe?
+		// http://stackoverflow.com/questions/338206/why-cant-i-switch-on-a-string
+		if (message.equals("draw")) {
+			
+		}
 		
-		// Set the text view as the activity layout
-		setContentView(textView);
+		else if (message.equals("EasterMeg!")) {
+			// Create a text view
+			TextView textView = new TextView(this);
+			textView.setTextSize(120);
+			textView.setText(":)");
+			
+			// Set the text view as the activity layout
+			setContentView(textView);			
+		} 
+		
+		else {
+			// Create a text view
+			TextView textView = new TextView(this);
+			textView.setTextSize(40);
+			textView.setText(message);
+			
+			// Set the text view as the activity layout
+			setContentView(textView);
+		}
+		
 	}
 
 	/**

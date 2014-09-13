@@ -42,13 +42,21 @@ public class MainActivity extends Activity {
 			case R.id.action_settings:
 				openSettings();
 				return true;
-			case R.id.action_toast:
-				doToast();
-				
+			case R.id.action_draw:
+				doDraw();
 				return true;
 			default:
 				return super.onOptionsItemSelected(item);
 		}
+	}
+
+	private void doDraw() {
+		// Launch the Draw activity, send the string along for custom commands
+		Intent intent = new Intent(this, ActivityDraw.class);
+		EditText editText = (EditText) findViewById(R.id.edit_message);
+		String message = editText.getText().toString();
+		intent.putExtra(EXTRA_MESSAGE, message);
+		startActivity(intent);
 	}
 
 	/** On click handler for Plot! button **/

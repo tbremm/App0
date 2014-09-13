@@ -15,10 +15,10 @@
     
      <!--  Toast  -->
     <item
-        android:id="@+id/action_toast"
-        android:icon="@drawable/ic_action_toast"
+        android:id="@+id/action_draw"
+        android:icon="@drawable/ic_action_draw"
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
-        android:title="@string/action_toast"/>
+        android:title="@string/action_draw"/>
 
 </menu>

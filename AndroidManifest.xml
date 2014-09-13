@@ -8,6 +8,9 @@
         android:minSdkVersion="11"
         android:targetSdkVersion="19" />
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -32,26 +35,25 @@
                 android:value="com.example.myfirstapp.MainActivity" />
         </activity>
 
-        <receiver android:name="com.example.myfirstapp.MyFirstAppWidget" >
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/my_first_app_widget_info" />
-        </receiver>
-
         <activity
             android:name="com.example.myfirstapp.PlotActivity"
             android:label="@string/title_activity_plot"
-            android:parentActivityName="MainActivity" >
+            android:parentActivityName="com.example.myfirstapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.MainActivity" />
+        </activity>
+        
+        
+        
+        <activity
+            android:name="com.example.myfirstapp.ActivityDraw"
+            android:label="@string/title_activity_draw"
+            android:parentActivityName="com.example.myfirstapp.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.myfirstapp.MainActivity" />
         </activity>
     </application>
-
-    <uses-permission android:name="android.permission.VIBRATE" />
 
 </manifest>
